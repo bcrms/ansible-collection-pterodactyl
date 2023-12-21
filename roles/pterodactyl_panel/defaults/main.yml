@@ -17,6 +17,8 @@ pterodactyl_panel_egg_author: "no-reply@{{ pterodactyl_panel_domain }}"
 pterodactyl_panel_url: "https://{{ ansible_fqdn }}"
 pterodactyl_panel_environment_only: true
 
+pterodactyl_panel_app_name: "Pterodactyl"
+
 pterodactyl_panel_db_host: "127.0.0.1"
 pterodactyl_panel_db_port: 3306
 pterodactyl_panel_db_name: panel
@@ -46,3 +48,10 @@ pterodactyl_panel_aws_default_region: ""
 pterodactyl_panel_aws_access_key_id: ""
 pterodactyl_panel_aws_secret_access_key: ""
 pterodactyl_panel_aws_backups_bucket: ""
+
+pterodactyl_panel_automatic_allocation_configure: false
+pterodactyl_panel_automatic_allocation_start: 25565
+pterodactyl_panel_automatic_allocation_end: 25565
+
+pterodactyl_panel_custom_recaptcha_site_key: ""
+pterodactyl_panel_custom_recaptcha_site_secret: ""
