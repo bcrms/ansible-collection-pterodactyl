@@ -56,7 +56,13 @@
     mode: 0640
   notify: restart wings
   when: (_pterodactyl_wings_config_current.stdout|from_yaml)|default({}) != pterodactyl_wings_config
-
+  
+- name: Remove invalid characters from Wings config file
+  ansible.builtin.replace:
+    path: "{{ pterodactyl_wings_config_dir }}/config.yml"
+    regexp: "'"
+    replace: ''
+    
 - name: Wings service file is present
   template:
     src: wings.service.j2
