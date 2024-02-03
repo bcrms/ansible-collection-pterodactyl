@@ -2,13 +2,13 @@
 # Includes utilities, CLI helpers and so on
 
 # Linting & Formatting
-ansible-lint==6.22.1
+ansible-lint==6.22.2
 pylint==3.0.3
 autopep8==2.0.4
 pre-commit==3.6.0
 
 # Testing libraries
-pytest==7.4.3
+pytest==7.4.4
 pytest-virtualenv==1.7.0
 docker==7.0.0
 
@@ -18,4 +18,4 @@ packaging==23.2
 
 # Also include a version of ansible-core for IDE hints
 # and as the default version used in tests
-ansible-core==2.16.2
+ansible-core==2.16.3
